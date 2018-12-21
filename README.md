@@ -1,5 +1,5 @@
 # Hashistack Load Balancer for Azure, Terraform Module
-#### Provisions resources for a load balancer for the hashistack in Azure.
+_Provisions resources for a load balancer for the hashistack in Azure._
 
 ### Setting up an Azure Service Principal for Usage with this Module
 
