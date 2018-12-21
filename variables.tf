@@ -2,7 +2,7 @@
 # General Variables
 # ---------------------------------------------------------------------------------------------------------------------
 variable "name" {
-  description = "The name to use on all of the resources."
+  description = "The name to use on all of the resources, in this case it will also be the Azure Resource Group name."
   type        = "string"
   default     = "hashistack-lb"
 }

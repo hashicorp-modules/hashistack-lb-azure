@@ -46,7 +46,6 @@ resource "azurerm_lb_nat_pool" "lb_azure" {
   frontend_ip_configuration_name = "${var.name}"
 }
 
-// TODO
 resource "azurerm_lb_probe" "lb_azure" {
   resource_group_name = "${azurerm_resource_group.lb_azure.name}"
   loadbalancer_id     = "${azurerm_lb.lb_azure.id}"
