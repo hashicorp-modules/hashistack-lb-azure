@@ -36,7 +36,6 @@ resource "azurerm_lb_backend_address_pool" "lb_azure" {
 
 resource "azurerm_lb_nat_pool" "lb_azure" {
   name                           = "ssh"
-  count                          = "${var.azure_nat_pool_count}"
   resource_group_name            = "${azurerm_resource_group.lb_azure.name}"
   loadbalancer_id                = "${azurerm_lb.lb_azure.id}"
   protocol                       = "Tcp"
