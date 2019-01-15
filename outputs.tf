@@ -5,7 +5,7 @@ output "backend_address_pool_id" {
 
 output "inbound_nat_rules_ids" {
   description = "The inbound NAT rules IDs created for the load balancer."
-  value       = "${azurerm_lb_nat_pool.lb_azure.*.id}"
+  value       = ["${azurerm_lb_nat_pool.lb_azure.*.id}"]
 }
 
 output "public_ip_address" {
