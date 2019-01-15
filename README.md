@@ -36,7 +36,7 @@ _Provisions resources for a load balancer for the hashistack in Azure._
 
 ## Outputs
 - `backend_address_pool_id`: The resource id of the backend address pool created for the load balancer.
-- `inbound_nat_pool_id`: The inbound NAT pool ID created for the load balancer.
+- `inbound_nat_rules_ids`: The inbound NAT rules IDs created for the load balancer.
 - `public_ip_address`: The load balancer public IP address.
 - `public_fqdn`: The load balancer public fully qualified domain name.
 

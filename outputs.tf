@@ -3,10 +3,6 @@ output "backend_address_pool_id" {
   value       = "${element(concat(azurerm_lb_backend_address_pool.lb_azure.*.id, list("")), 0)}"
 }
 
-output "inbound_nat_pool_id" {
-  description = "The inbound NAT pool ID created for the load balancer."
-  value       = "${azurerm_lb_nat_pool.lb_azure.id}"
-}
 output "inbound_nat_rules_ids" {
   description = "The inbound NAT rules IDs created for the load balancer."
   value       = "${azurerm_lb_nat_pool.lb_azure.*.id}"
