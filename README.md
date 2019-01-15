@@ -32,6 +32,7 @@ _Provisions resources for a load balancer for the hashistack in Azure._
 ## Input Variables
 - `name`: The name to use on all of the resources, in this case it will also be the Azure Resource Group name.
 - `azure_region`: The Azure Region to use for all resources (ex: westus, eastus).
+- `azure_nat_pool_count`: The number of nat pools to spin up for the load balancer.
 
 ## Outputs
 - `backend_address_pool_id`: The resource id of the backend address pool created for the load balancer.
