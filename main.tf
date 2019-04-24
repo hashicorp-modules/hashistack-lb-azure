@@ -10,11 +10,11 @@ resource "azurerm_resource_group" "lb_azure" {
 #  Azure Load Balancer Resources
 # ---------------------------------------------------------------------------------------------------------------------
 resource "azurerm_public_ip" "lb_azure" {
-  name                         = "${var.name}"
-  location                     = "${var.azure_region}"
-  resource_group_name          = "${azurerm_resource_group.lb_azure.name}"
-  public_ip_address_allocation = "static"
-  domain_name_label            = "${var.name}"
+  name                = "${var.name}"
+  location            = "${var.azure_region}"
+  resource_group_name = "${azurerm_resource_group.lb_azure.name}"
+  allocation_method   = "Static"
+  domain_name_label   = "${var.name}"
 }
 
 resource "azurerm_lb" "lb_azure" {
